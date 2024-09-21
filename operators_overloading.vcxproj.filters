@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{5e07c6df-e6fc-4547-881a-2b69432528e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{fd744244-b340-46f8-9039-e826491124e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain">
+      <UniqueIdentifier>{0d30aa67-f987-47da-9509-5e080e7c7873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\human">
+      <UniqueIdentifier>{3b079f1d-f0f7-4ad0-9514-472f2a660157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\queue">
+      <UniqueIdentifier>{b9bf33b3-4fd5-4514-8848-10b3f07b375f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="human.cpp">
+      <Filter>domain\human</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>domain\queue</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logger.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="const.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="libs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="human.h">
+      <Filter>domain\human</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>domain\queue</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
