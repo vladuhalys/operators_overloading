@@ -51,10 +51,7 @@ void Queue::push(Human human)
 }
 void Queue::push(Human* human)
 {
-	Logger::info("Pushing human to queue");
-	analyze_memory();
-	_queue[*_size] = *human;
-	(*_size)++;
+	push(*human);
 }
 
 void Queue::print_all() const

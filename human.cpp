@@ -9,6 +9,17 @@ Human::Human(string name)
 	Logger::debug("Human created with custom name");
 	fullName = name;
 }
+Human::Human(string name, int age)
+{
+	Logger::debug("Human created with custom name and age");
+	fullName = name;
+	this->age = age;
+}
+Human::Human(const char* name)
+{
+	Logger::debug("Human created with custom name");
+	fullName = name;
+}
 void Human::printName() const
 {
 	cout << "Name: " << fullName << endl;
@@ -25,3 +36,4 @@ Human::~Human()
 {
 	Logger::error(_get_object_as_string() + " deleted");
 }
+
