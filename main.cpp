@@ -30,14 +30,11 @@ int main()
 	human_queue->print_all();
 
 	delete human_queue;*/
-
-	Human human;
-	Human human2;
-
-	cin >> human;
-	cin >> human2;
-
-	cout << human << endl;
+	
+	Human human1("John Doe", 25);
+	Human human2 = human1++;
+	human2++; //+1
+	cout << human1 << endl;
 	cout << human2 << endl;
 	return 0;
 }
